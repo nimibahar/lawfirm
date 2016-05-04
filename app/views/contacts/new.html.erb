@@ -1,4 +1,8 @@
-<h1>Say Hello!</h1>
+<% content_for :navbar do %>
+  <%= render 'shared/gennavbar' %>
+<% end %>
+
+
 
 <div class="skinny_wrapper wrapper_padding">
   <%= form_for @contact do |f| %>
