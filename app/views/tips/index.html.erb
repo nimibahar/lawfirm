@@ -1,2 +1,17 @@
-<h1>Tips#index</h1>
-<p>Find me in app/views/tips/index.html.erb</p>
+<% content_for :navbar do %>
+  <%= render 'shared/gennavbar' %>
+<% end %>
+
+<h1>Tips#index | All the tips</h1>
+
+<h3><%= link_to "New tip", new_tip_path  %></h3>
+
+<% @tips.each do |tip| %>
+  <h2><%= tip.subject %></h2>
+  <p><%= tip.content %></p>
+
+  <%= link_to "Edit", edit_tip_path(tip) %>
+  <%= link_to "Delete", tip_path(tip),
+    method: :delete,
+    data: { confirm: "Are you sure you want to delete?" } %>
+<% end %>
