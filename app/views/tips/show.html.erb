@@ -1,2 +1,11 @@
+<% content_for :navbar do %>
+  <%= render 'shared/gennavbar' %>
+<% end %>
+
 <h1>Tips#show</h1>
-<p>Find me in app/views/tips/show.html.erb</p>
+
+
+<h2><%= @tip.subject %></h2>
+<p><%= @tip.content %></p>
+
+
