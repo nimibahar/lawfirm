@@ -1,4 +1,4 @@
-<div class="gennavbar-wagon">
+<div class="gennavbar-wagon gennavbar-wagon-fixed">
   <!-- Logo -->
   <%= link_to root_path, class: "gennavbar-wagon-brand" do %>
     <%= image_tag "logo.svg" %>
@@ -12,6 +12,9 @@
     <div class="gennavbar-wagon-item">
       <%= link_to 'Contact', new_contact_path, class:"gennavbar-wagon-link" %>
     </div>
+    <div class="gennavbar-wagon-item">
+      <%= link_to 'Tips', tips_path, class:"gennavbar-wagon-link" %>
+    </div>
   </div>
   <!-- Dropdown list appearing on mobile only -->
   <div class="gennavbar-wagon-item hidden-md hidden-lg">
@@ -20,6 +23,7 @@
       <ul class="dropdown-menu dropdown-menu-right gennavbar-wagon-dropdown-menu">
         <li><%= link_to 'About', about_path, class:"navbar-wagon-link" %></li>
         <li><%= link_to 'Contact', new_contact_path, class:"gennavbar-wagon-link" %></li>
+        <li><%= link_to 'Tips', tips_path, class:"gennavbar-wagon-link" %></li>
       </ul>
     </div>
   </div>
