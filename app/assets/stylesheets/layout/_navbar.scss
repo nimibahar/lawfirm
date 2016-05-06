@@ -18,6 +18,7 @@
   top: 0px;
   z-index: 1;
   width: 100%;
+  color: white;
 }
 
 /* Navbar logo */
@@ -41,13 +42,14 @@
 
 /* Navbar standard link */
 .navbar-wagon-link {
-  color: #616668;
-  // color: white;
+  // color: #616668;
+  color: white;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
   color: #616668;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 /* Navbar right button */
