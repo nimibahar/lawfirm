@@ -2,7 +2,7 @@
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   // background: white;
-  background: transparent;
+  // background: transparent;
   transition: all 0.3s ease;
   display: flex;
   height: 70px;
@@ -18,7 +18,8 @@
   top: 0px;
   z-index: 1;
   width: 100%;
-  color: white;
+  // color: white;
+  background-color: transparent;
 }
 
 /* Navbar logo */
@@ -40,6 +41,7 @@
   padding: 0 20px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  color: white;
 }
 
 /* Navbar standard link */
