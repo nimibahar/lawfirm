@@ -14,9 +14,10 @@ class FeedbacksController < ApplicationController
 
   def create
     @feedback = Feedback.new(feedback_params)
-    @feedback.save
-
-    redirect_to feedback_path(@feedback)
+    if @feedback.save
+      redirect_to feedback_path(@feedback), notice: "Feedback was successfully added"
+    else
+      render action: 'new', notice: "Feedback was not save, please try again"
   end
 
   def edit
