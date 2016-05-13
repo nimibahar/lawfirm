@@ -18,6 +18,7 @@ class FeedbacksController < ApplicationController
       redirect_to feedback_path(@feedback), notice: "Feedback was successfully added"
     else
       render action: 'new', notice: "Feedback was not save, please try again"
+    end
   end
 
   def edit
