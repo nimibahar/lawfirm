@@ -22,6 +22,7 @@
   background-color: transparent;
 }
 
+
 /* Navbar logo */
 .navbar-wagon-brand img {
   width: 50px;
@@ -51,7 +52,15 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #616668;
+  // color: #616668;
+  color: #F1C40F;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* jquary link hover class */
+.navbar-wagon-link-hover {
+  color: #F1C40F !important;
   text-decoration: none;
   transition: 0.3s;
 }
