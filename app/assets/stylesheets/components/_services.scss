@@ -3,12 +3,18 @@
   width: 250px;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   border: solid 1px #F1C40F;
   border-radius: 50%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-size: cover !important;
+  color: white;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .service-hoverable:hover {
@@ -16,8 +22,8 @@
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.row-horizontler {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#will {
+  padding-left: 20px;
 }
+
+
