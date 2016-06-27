@@ -213,7 +213,7 @@ DEPENDENCIES
   rails_12factor
   redis
   sass-rails
-  simple_form
+  simple_form (~> 3.2, >= 3.2.1)
   spring
   uglifier
 
