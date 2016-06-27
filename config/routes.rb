@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
   resources :tips
 
+  resources :services
+
   get 'about', to: 'pages#about'
+
 
   resources :contacts, only: [:new, :create]
   devise_for :users
